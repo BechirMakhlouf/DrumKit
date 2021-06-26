@@ -24,7 +24,7 @@ const program = {
 };
 
 program.keys.forEach((key) => {
-  document.addEventListener("keydown", function (e) {
+  document.addEventListener("keypress", function (e) {
     if (e.key.toUpperCase() === key) {
       program[`btn${key}`].classList.add("playing");
       program[`audio${key}`].play();
