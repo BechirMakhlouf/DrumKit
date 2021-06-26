@@ -28,7 +28,7 @@ program.keys.forEach((key) => {
     if (e.key.toUpperCase() === key) {
       program[`btn${key}`].classList.add("playing");
       program[`audio${key}`].play();
-    }
+    } 
   });
   document.addEventListener("keyup", function (e) {
     if (e.key.toUpperCase() === key) {
