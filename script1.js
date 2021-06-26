@@ -33,7 +33,7 @@ program.keys.forEach((key) => {
   document.addEventListener("keyup", function (e) {
     if (e.key.toUpperCase() === key) {
       program[`btn${key}`].classList.remove("playing");
-      program[`audio${key}`].load();
+//       program[`audio${key}`].load();
     }
   });
 });
